@@ -82,8 +82,8 @@ def run():
     ax.xaxis.label.set_color('black')       
     ax.yaxis.label.set_color('black')
     ax.title.set_color('black')
-    ax.tick_params(axis='x', colors='black')   
-    ax.tick_params(axis='y', colors='black')
+    #ax.tick_params(axis='x', colors='black')   
+    #ax.tick_params(axis='y', colors='black')
     tab1.pyplot(fig)
     
     df_trendprice = df_cars[(df_cars["manufacturer"] == manufacturer) & (df_cars["year"].isna() != True)].groupby("year", as_index = False)["price"].mean()
@@ -95,8 +95,8 @@ def run():
     ax2.xaxis.label.set_color('black')       
     ax2.yaxis.label.set_color('black')
     ax2.title.set_color('black')
-    ax2.tick_params(axis='x', colors='black')   
-    ax2.tick_params(axis='y', colors='black')
+    #ax2.tick_params(axis='x', colors='black')   
+    #ax2.tick_params(axis='y', colors='black')
     tab2.pyplot(fig2)
     
     
