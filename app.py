@@ -1,14 +1,14 @@
 import streamlit as st # installing streamlit
 import pandas as pd # installing panda
-import numpy as np
+import numpy as np # it is for working with arrays 
 from matplotlib import pyplot
 import matplotlib.pyplot as plt
-import seaborn as sns; #sns.set(rc={'axes.facecolor':(0,0,0,0),'figure.facecolor':(0,0,0,0)})
-from PIL import Image
+import seaborn as sns; #sns.set(rc={'axes.facecolor':(0,0,0,0),'figure.facecolor':(0,0,0,0)}) # I think it is a new package we did use. It's for data visualization
+from PIL import Image # This is also a new package we didn't use. I think
 
 df_cars = pd.read_csv("usedcars.csv")
 
-def run():
+def run(): 
 
     # Defining Site Tab and Data Frame
     st.set_page_config(page_title="Craiglist Car Analytics", # Site tab title
@@ -97,7 +97,7 @@ def run():
     ax2.title.set_color('black')
     #ax2.tick_params(axis='x', colors='black')   
     #ax2.tick_params(axis='y', colors='black')
-    tab2.pyplot(fig2,ax2)
+    tab2.pyplot(fig2)
     
     
     def geospatial_info(manufacturer="ford", condition ="excellent", year =2020.0):
