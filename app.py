@@ -127,19 +127,17 @@ def run():
 
     def variable_check():
         for index,row in df_cars.iterrows():
-            ford_list = []
+            all_variables = []
             if row["manufacturer"] == "ford":
-                ford_list.append(row)
-            return ford_list
+                all_variables.append(row)
+            return all_variables
 
     tab5.markdown("<h4 style='text-align: center; color: blue;'>Here are all variables in the used data list</h4>",
                 unsafe_allow_html=True)
-    
+    df_all_variables = variable_check(df_cars)
+    print(df_all_variables)
+    tab5.dataframe(df_all_variables)
+
 if __name__ == "__main__":
     run()
-
-
-
-
-
 
