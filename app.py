@@ -97,7 +97,7 @@ def run():
     ax2.title.set_color('black')
     #ax2.tick_params(axis='x', colors='black')   
     #ax2.tick_params(axis='y', colors='black')
-    tab2.pyplot(fig2)
+    tab2.pyplot(fig2,ax2)
     
     
     def geospatial_info(manufacturer="ford", condition ="excellent", year =2020.0):
