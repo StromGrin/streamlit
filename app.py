@@ -29,7 +29,7 @@ def run():
     manufacturer = tabf.multiselect(
         "Select the car brand: ",
         options = list(df_cars["manufacturer"].unique()),
-        default = sorted(list(df_cars[df_cars["manufacturer"].isna() != True]["manufacturer"].unique()))[:3]
+        default = sorted(list(df_cars[df_cars["manufacturer"].isna() != True]["manufacturer"].unique()))[4:6]
     )
 
     # Car year selection
