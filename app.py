@@ -116,7 +116,6 @@ def run():
     def optimal_solution(manufacturer):
         df_cars_excellent = df_cars[(df_cars["manufacturer"] == manufacturer) & (df_cars["condition"] == "excellent")]
         df_optimal = df_cars_excellent.sort_values("odometer", ascending = True).head(10)
-        df_optimal["condition"] = df_optimal["condition"].astype(int)
         df_optimal["year"] = df_optimal["year"].astype(int)
         df_optimal["odometer"] = df_optimal["odometer"].astype(int)
         return df_optimal[["model", "year","price", "odometer"]]
