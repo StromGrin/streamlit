@@ -136,7 +136,7 @@ def run():
                 unsafe_allow_html=True)
     df_all_variables = variable_check(df_cars)
     print(df_all_variables)
-    tab5.dataframe(df_all_variables)
+    tab5.markdown(df_all_variables)
 
 if __name__ == "__main__":
     run()
