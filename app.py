@@ -135,7 +135,7 @@ def run():
     tab5.markdown("<h4 style='text-align: center; color: blue;'>Here are all variables in the used data list</h4>",
                 unsafe_allow_html=True)
     df_all_variables = variable_check(df_cars)
-    tab5.markdown(f"<b>{df_all_variables}</b>")
+    tab5.write(pd.DataFrame(df_all_variables))
 
 if __name__ == "__main__":
     run()
