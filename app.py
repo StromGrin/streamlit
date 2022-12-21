@@ -3,7 +3,7 @@ import pandas as pd # installing panda
 import numpy as np
 from matplotlib import pyplot
 import matplotlib.pyplot as plt
-import seaborn as sns; sns.set(rc={'axes.facecolor':(0,0,0,0),'figure.facecolor':(0,0,0,0)})
+import seaborn as sns; #sns.set(rc={'axes.facecolor':(0,0,0,0),'figure.facecolor':(0,0,0,0)})
 from PIL import Image
 
 df_cars = pd.read_csv("usedcars.csv")
