@@ -27,8 +27,7 @@ def run():
     # Car brand selection
     tabf.header("Data Extraction")
     manufacturer = tabf.multiselect(
-        "Select the car brand: 
-        (If you don't see any value in the table, add any manufacturer such as Ford and then the values will appear)",
+        "Select the car brand: ",
         options = list(df_cars["manufacturer"].unique()),
         default = sorted(list(df_cars[df_cars["manufacturer"].isna() != True]["manufacturer"].unique()))[:3]
     )
